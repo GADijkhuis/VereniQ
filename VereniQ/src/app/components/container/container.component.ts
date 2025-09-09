@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -6,6 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container.component.scss'],
   standalone: true,
 })
-export class ContainerComponent  implements OnInit {
-  ngOnInit() {}
+export class ContainerComponent {
+  @Input() isFullHeight: boolean = false;
 }

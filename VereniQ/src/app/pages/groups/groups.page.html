@@ -5,12 +5,13 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Groups</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <div id="container">
-
-  </div>
+  <app-container>
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Groups</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <app-button-card>Group 1</app-button-card>
+    <app-button-card iconName="add-outline" [showChevron]="false">Sign in for a Group</app-button-card>
+  </app-container>
 </ion-content>
