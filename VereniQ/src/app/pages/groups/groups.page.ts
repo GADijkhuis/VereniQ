@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import {
-  IonCard,
-  IonCardContent, IonCol,
   IonContent,
-  IonGrid,
   IonHeader,
-  IonRow,
   IonTitle,
   IonToolbar
 } from '@ionic/angular/standalone';

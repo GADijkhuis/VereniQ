@@ -1,4 +1,4 @@
-#container-top {
+.container-top {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-#container-bottom {
+.container-bottom {
   flex-shrink: 0;
   margin-bottom: 20px;
   display: flex;
@@ -14,13 +14,13 @@
   gap: 10px;
 }
 
-#container-button {
+.container-button {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#app-icon-logo {
+.app-icon-logo {
   max-width: 200px;
   width: 100%;
 }
