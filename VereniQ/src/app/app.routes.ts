@@ -18,4 +18,12 @@ export const routes: Routes = [
     path: 'groups',
     loadComponent: () => import('./pages/groups/groups.page').then( m => m.GroupsPage)
   },
+  {
+    path: 'events',
+    loadComponent: () => import('./pages/events/events.page').then( m => m.EventsPage)
+  },
+  {
+    path: 'single-event',
+    loadComponent: () => import('./pages/single-event/single-event.page').then( m => m.SingleEventPage)
+  },
 ];

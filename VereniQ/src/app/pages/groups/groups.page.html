@@ -11,7 +11,11 @@
         <ion-title size="large">Groups</ion-title>
       </ion-toolbar>
     </ion-header>
-    <app-button-card>Group 1</app-button-card>
-    <app-button-card iconName="add-outline" [showChevron]="false">Sign in for a Group</app-button-card>
+    <app-button-card>
+      <app-button-card-text title="Group 1"></app-button-card-text>
+    </app-button-card>
+    <app-button-card iconName="add-outline" [showChevron]="false">
+      <app-button-card-text title="Sign in for a Group"></app-button-card-text>
+    </app-button-card>
   </app-container>
 </ion-content>

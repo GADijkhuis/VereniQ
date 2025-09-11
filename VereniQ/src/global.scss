@@ -35,3 +35,16 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+p, a{
+  margin: 5px 0;
+}
+
+a {
+  transition: color 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--ion-color-secondary);
+  }
+}
