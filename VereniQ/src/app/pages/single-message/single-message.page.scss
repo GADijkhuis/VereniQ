@@ -1,0 +1,18 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-message ion-card {
+  --background: var(--ion-color-light);
+  border-radius: 15px;
+  box-shadow: none;
+  max-width: 80%;
+  margin: 10px;
+}
+
+.chat-message {
+  display: flex;
+  justify-content: flex-start;
+}

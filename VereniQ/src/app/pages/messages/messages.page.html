@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-container [isFullHeight]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Messages</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <app-button-card iconName="chatbubble-outline">
+      <app-button-card-text title="Event 1" subtitle="This is the latest message..."></app-button-card-text>
+    </app-button-card>
+    <app-button-card iconName="chatbubble-outline">
+      <app-button-card-text title="Event 2" subtitle="This is the latest message..."></app-button-card-text>
+    </app-button-card>
+  </app-container>
+</ion-content>

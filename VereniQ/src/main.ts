@@ -6,9 +6,20 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 
 import { addIcons } from 'ionicons';
-import {peopleOutline, chevronForward, addOutline, calendarOutline, locationOutline, earthOutline, callOutline, addCircleOutline} from 'ionicons/icons';
+import {
+  peopleOutline,
+  chevronForward,
+  addOutline,
+  calendarOutline,
+  locationOutline,
+  earthOutline,
+  callOutline,
+  addCircleOutline,
+  chatbubbleOutline,
+  settingsOutline
+} from 'ionicons/icons';
 
-addIcons({ peopleOutline, chevronForward, addOutline, calendarOutline, locationOutline, earthOutline, callOutline, addCircleOutline });
+addIcons({ peopleOutline, chevronForward, addOutline, calendarOutline, locationOutline, earthOutline, callOutline, addCircleOutline, chatbubbleOutline, settingsOutline });
 
 bootstrapApplication(AppComponent, {
   providers: [

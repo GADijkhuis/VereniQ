@@ -3,11 +3,11 @@ import {IonHeader, IonToolbar, IonTitle, IonContent, IonItem, IonSpinner} from '
 import {ContainerComponent} from "../../components/container/container.component";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-loading',
+  templateUrl: 'loading.page.html',
+  styleUrls: ['loading.page.scss'],
   imports: [IonContent, IonSpinner, ContainerComponent],
 })
-export class HomePage {
+export class LoadingPage {
   constructor() {}
 }

@@ -2,12 +2,12 @@ ion-card {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
   border-radius: 12px;
   margin: 10px;
+  --background: var(--ion-color-light);
 
   &:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    background: var(--ion-color-light);
+    background: var(--ion-color-light-shade);
   }
 }
 
