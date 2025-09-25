@@ -17,6 +17,7 @@ import {IonCard, IonCardContent, IonCol, IonGrid, IonIcon, IonRow, IonText} from
   ]
 })
 export class ButtonCardComponent{
+  @Input() buttonUrl = '';
   @Input() iconName = 'people-outline';
   @Input() showChevron = true;
 }

@@ -11,11 +11,25 @@
         <ion-title size="large">Messages</ion-title>
       </ion-toolbar>
     </ion-header>
-    <app-button-card iconName="chatbubble-outline">
-      <app-button-card-text title="Event 1" subtitle="This is the latest message..."></app-button-card-text>
-    </app-button-card>
-    <app-button-card iconName="chatbubble-outline">
-      <app-button-card-text title="Event 2" subtitle="This is the latest message..."></app-button-card-text>
-    </app-button-card>
+    <ion-list lines="inset">
+      <ion-item [button]="true">
+        <app-list-icon aria-hidden="true" slot="start" color="#444">
+          <mat-icon>chat_bubble</mat-icon>
+        </app-list-icon>
+        <ion-label>
+          <h2>Message 1</h2>
+          <p>Last message...</p>
+        </ion-label>
+      </ion-item>
+      <ion-item [button]="true">
+        <app-list-icon aria-hidden="true" slot="start" color="#444">
+          <mat-icon>chat_bubble</mat-icon>
+        </app-list-icon>
+        <ion-label>
+          <h2>Message 2</h2>
+          <p>Last message...</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </app-container>
 </ion-content>
