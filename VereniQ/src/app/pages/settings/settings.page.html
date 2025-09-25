@@ -11,5 +11,21 @@
         <ion-title size="large">Settings</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-list lines="inset">
+      <ion-item [button]="true">
+        <app-list-icon-small>
+          <mat-icon>person</mat-icon>
+        </app-list-icon-small>
+        <ion-label>Account settings</ion-label>
+      </ion-item>
+      <ion-item>
+        <app-list-icon-small>
+          <mat-icon>notifications</mat-icon>
+        </app-list-icon-small>
+        <ion-toggle>
+          <ion-label>Notifications</ion-label>
+        </ion-toggle>
+      </ion-item>
+    </ion-list>
   </app-container>
 </ion-content>
