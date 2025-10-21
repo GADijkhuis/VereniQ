@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Event 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-container [isFullHeight]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Event 1</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div class="container-top">
+      <app-text-icon>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </app-text-icon>
+      <app-text-icon icon="calendar-outline">
+        <p>Start: 1-2-2025 10:00</p>
+      </app-text-icon>
+      <app-text-icon icon="calendar-outline">
+        <p>End: 2-2-2025 10:00</p>
+      </app-text-icon>
+      <app-text-icon icon="location-outline">
+        <a href="https://maps.app.goo.gl/7XzY9QDDuMEJcRgF9" target="_blank">Location</a>
+      </app-text-icon>
+      <app-text-icon icon="earth-outline">
+        <a href="https://gadijkhuis.nl" target="_blank">gadijkhuis.nl</a>
+      </app-text-icon>
+      <app-text-icon icon="call-outline">
+        <a href="tel:0031688345242" target="_blank">+31688345242</a>
+      </app-text-icon>
+      <app-text-icon icon="add-circle-outline">
+        <a href="#" target="_blank">Add to calendar</a>
+      </app-text-icon>
+    </div>
+    <div class="container-bottom">
+      <p>Your current presence state: Present</p>
+      <ion-button expand="block" id="set-absence-alert">Presence</ion-button>
+      <ion-alert
+        trigger="set-absence-alert"
+        header="Set presence"
+        message="Set your presence for this event."
+        [backdropDismiss]="false"
+        [buttons]="alertButtons"
+      ></ion-alert>
+    </div>
+  </app-container>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Messages</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-container [isFullHeight]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Messages</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-list lines="inset">
+      <ion-item [button]="true">
+        <app-list-icon aria-hidden="true" slot="start" color="#444">
+          <mat-icon>chat_bubble</mat-icon>
+        </app-list-icon>
+        <ion-label>
+          <h2>Message 1</h2>
+          <p>Last message...</p>
+        </ion-label>
+      </ion-item>
+      <ion-item [button]="true">
+        <app-list-icon aria-hidden="true" slot="start" color="#444">
+          <mat-icon>chat_bubble</mat-icon>
+        </app-list-icon>
+        <ion-label>
+          <h2>Message 2</h2>
+          <p>Last message...</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </app-container>
+</ion-content>

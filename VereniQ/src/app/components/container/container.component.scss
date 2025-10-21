@@ -1,0 +1,12 @@
+#container {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+#container.full-height {
+  height: 100%;
+}

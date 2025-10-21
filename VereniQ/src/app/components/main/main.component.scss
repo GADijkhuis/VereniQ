@@ -1,0 +1,9 @@
+.tabs {
+  background: var(--ion-background-color);
+  padding: 5px;
+
+  &-button{
+    max-width: 140px;
+    background-color: transparent !important;
+  }
+}

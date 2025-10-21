@@ -5,6 +5,22 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 
+import { addIcons } from 'ionicons';
+import {
+  peopleOutline,
+  chevronForward,
+  addOutline,
+  calendarOutline,
+  locationOutline,
+  earthOutline,
+  callOutline,
+  addCircleOutline,
+  chatbubbleOutline,
+  settingsOutline
+} from 'ionicons/icons';
+
+addIcons({ peopleOutline, chevronForward, addOutline, calendarOutline, locationOutline, earthOutline, callOutline, addCircleOutline, chatbubbleOutline, settingsOutline });
+
 bootstrapApplication(AppComponent, {
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
