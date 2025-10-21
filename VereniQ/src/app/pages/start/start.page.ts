@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonButton} from '@ionic/angular/standalone';
 import {ContainerComponent} from "../../components/container/container.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-start',
@@ -9,5 +10,13 @@ import {ContainerComponent} from "../../components/container/container.component
   imports: [IonContent, IonButton, ContainerComponent],
 })
 export class StartPage {
-  constructor() {}
+  constructor(private router: Router) {}
+
+  signUp() {
+    this.router.navigate(['/signup']);
+  }
+
+  signIn() {
+    this.router.navigate(['/signin']);
+  }
 }

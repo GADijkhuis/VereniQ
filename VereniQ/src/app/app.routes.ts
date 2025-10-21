@@ -12,6 +12,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/start/start.page').then((m) => m.StartPage),
   },
   {
+    path: 'signup',
+    loadComponent: () => import('./pages/auth/signup/signup.page').then( m => m.SignupPage)
+  },
+  {
+    path: 'signin',
+    loadComponent: () => import('./pages/auth/signin/signin.page').then( m => m.SigninPage)
+  },
+  {
     path: 'main',
     component: MainComponent,
     children: [
@@ -50,5 +58,13 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'loading',
     pathMatch: 'full',
+  },
+  {
+    path: 'signup',
+    loadComponent: () => import('./pages/auth/signup/signup.page').then( m => m.SignupPage)
+  },
+  {
+    path: 'signin',
+    loadComponent: () => import('./pages/auth/signin/signin.page').then( m => m.SigninPage)
   },
 ];

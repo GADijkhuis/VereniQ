@@ -1,0 +1,16 @@
+<ion-card>
+  @if (imageUrl) {
+    <img [src]="imageUrl"  alt="Image"/>
+  } @else {
+    <div class="icon-container">
+      <ion-icon [name]="iconName" size="large"></ion-icon>
+    </div>
+  }
+  <ion-card-header>
+    <ion-card-title>{{title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{description}}
+  </ion-card-content>
+  <ion-button expand="block" [href]="buttonUrl">Action 1</ion-button>
+</ion-card>

@@ -1,7 +1,0 @@
-{
-  "name": "VereniQ",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
