@@ -3,7 +3,7 @@
     <ion-title>New Account</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
   <app-container [isFullHeight]="true">
     <ion-header collapse="condense">
       <ion-toolbar>
@@ -13,10 +13,10 @@
     <app-email-confirmation-animation/>
     <div class="container-bottom">
       <div class="container-text">
-        <p>We've sended an email with a link to confirm your email-adress. Please click the link to activate your account</p>
+        <p>We've sended an email with a link to confirm your email-adress. Please click the link to activate your account. When confirmed, click the button below to log in with your new account.</p>
       </div>
       <div class="container-button">
-        <ion-button expand="block" (click)="null">I've confirmed my email</ion-button>
+        <ion-button expand="block" (click)="this.router.navigate(['/auth/signin'])">I've confirmed my email</ion-button>
       </div>
     </div>
 

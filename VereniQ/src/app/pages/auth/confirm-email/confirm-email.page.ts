@@ -4,6 +4,7 @@ import {ContainerComponent} from "../../../components/container/container.compon
 import {
   EmailConfirmationAnimationComponent
 } from "../../../components/email-confirmation-animation/email-confirmation-animation.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-create-profile',
@@ -22,6 +23,10 @@ import {
 })
 
 export class ConfirmEmailPage implements OnInit {
+
+  constructor(protected router: Router) {
+  }
+
   ngOnInit() {
 
   }
