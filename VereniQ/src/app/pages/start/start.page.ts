@@ -13,10 +13,10 @@ export class StartPage {
   constructor(private router: Router) {}
 
   signUp() {
-    this.router.navigate(['/signup']);
+    this.router.navigate(['/auth/signup']);
   }
 
   signIn() {
-    this.router.navigate(['/signin']);
+    this.router.navigate(['/auth/signin']);
   }
 }

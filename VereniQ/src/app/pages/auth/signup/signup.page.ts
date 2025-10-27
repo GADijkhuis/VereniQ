@@ -14,6 +14,7 @@ import {
 } from '@ionic/angular/standalone';
 import {ContainerComponent} from "../../../components/container/container.component";
 import {signUpUser} from "../../../services/authService";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-signup',
@@ -34,7 +35,7 @@ export class SignupPage implements OnInit {
     confirmPassword: ['', Validators.required],
   });
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -52,13 +53,18 @@ export class SignupPage implements OnInit {
     }
 
     const response = await signUpUser(email, password);
-    this.loading = false;
 
-    if (response.success) {
-      this.message = 'Successfully registered';
-    } else {
+    if (!response.success) {
+      this.loading = false;
       this.message = `Error: ${response.message}`;
+      return;
     }
+
+    this.message = 'Successfully registered';
+
+    setTimeout(() => {
+      this.router.navigate(['/auth/confirm-email']);
+    }, 2000);
   }
 
 }

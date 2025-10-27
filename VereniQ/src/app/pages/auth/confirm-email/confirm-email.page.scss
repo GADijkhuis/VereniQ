@@ -1,0 +1,14 @@
+
+.container-bottom {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

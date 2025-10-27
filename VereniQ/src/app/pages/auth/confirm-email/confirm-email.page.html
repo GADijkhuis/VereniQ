@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>New Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <app-container [isFullHeight]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Email confirmation</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <app-email-confirmation-animation/>
+    <div class="container-bottom">
+      <div class="container-text">
+        <p>We've sended an email with a link to confirm your email-adress. Please click the link to activate your account</p>
+      </div>
+      <div class="container-button">
+        <ion-button expand="block" (click)="null">I've confirmed my email</ion-button>
+      </div>
+    </div>
+
+  </app-container>
+</ion-content>

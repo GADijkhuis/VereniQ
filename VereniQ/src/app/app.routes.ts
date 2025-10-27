@@ -12,12 +12,25 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/start/start.page').then((m) => m.StartPage),
   },
   {
-    path: 'signup',
-    loadComponent: () => import('./pages/auth/signup/signup.page').then( m => m.SignupPage)
+    path: 'create-profile',
+    loadComponent: () => import('./pages/profile/create-profile/create-profile.page').then( m => m.CreateProfilePage)
   },
   {
-    path: 'signin',
-    loadComponent: () => import('./pages/auth/signin/signin.page').then( m => m.SigninPage)
+    path: 'auth',
+    children: [
+      {
+        path: 'signup',
+        loadComponent: () => import('./pages/auth/signup/signup.page').then( m => m.SignupPage)
+      },
+      {
+        path: 'signin',
+        loadComponent: () => import('./pages/auth/signin/signin.page').then( m => m.SigninPage)
+      },
+      {
+        path: 'email-confirm',
+        loadComponent: () => import('./pages/auth/confirm-email/confirm-email.page').then( m => m.ConfirmEmailPage)
+      }
+    ]
   },
   {
     path: 'main',

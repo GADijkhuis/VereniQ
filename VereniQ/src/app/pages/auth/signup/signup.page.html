@@ -36,5 +36,5 @@
       </div>
     </form>
   </app-container>
-  <ion-toast [isOpen]="message != null" [message]="message!" [duration]="5000"></ion-toast>
+  <ion-toast [isOpen]="message != null" [message]="message!" [duration]="5000" (ionToastWillDismiss)="message = null"></ion-toast>
 </ion-content>
